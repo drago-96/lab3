@@ -17,9 +17,11 @@ function [x,u] = eulero(odefun,slot,y0,h)
 
   x = [slot(1):h:slot(2)];
   n = floor((slot(2)-slot(1))/h)+1;
-  u = zeros(n,1);
-  u(1)=y0;
+  m = size(y0,1);
+  u = zeros(m,n);
+  u(:,1)=y0;
+
   for i=1:n-1
-    u(i+1)=u(i)+h*odefun(x(i),u(i));
+    u(:,i+1)=u(:,i)+h*odefun(x(i),u(:,i));
   end
   
