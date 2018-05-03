@@ -1,0 +1,10 @@
+#**.tex
+#**.pdf
+#**.log
+#**.aux
+#**.synctex.gz
+#**.ogv
+*
+!.gitignore
+!**.m
+!**/
