@@ -1,9 +1,8 @@
-function yp = funLV(x,y)
+function yp = funLV(x,y,p)
   yp = zeros(2,1);
   alpha=[0 0];
   beta=[0 0];
   gamma=[0 0];
-  p=5;
   if p==1 %predatori
     alpha=[2 -0.2];
     beta=[0.1 -0.1];

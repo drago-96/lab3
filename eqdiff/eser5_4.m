@@ -14,7 +14,7 @@ switch(caso)
 endswitch
     
 fOA=@(x,y) [y(2);(-h*y(1)-k*y(2)+fext(x))/m];
-[x,y] = eulero(fOA,T,y0,0.01);
-plot(x,y(1,:),x,y(2,:));
+[x,y] = ode45(fOA,T,y0);
+plot(x,y(:,1),x,y(:,2));
 legend("pos","vel");
 
