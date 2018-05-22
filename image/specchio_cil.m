@@ -1,7 +1,6 @@
 function Y = specchio_cil(X)
-  % function Y = ruota(X, p, ang)
-  % ruota limmagine X attorno a p di un angolo ang
-  % in modo antiorario
+  % function Y = specchio_cil(X)
+  % trasforma l'immagine X nella sua riflessa tramite uno specchio cilindrico
   m = size(X,1); n = size(X,2); c = size(X,3);
   Y=uint8(zeros(m,n,c));
   for i=1:n
