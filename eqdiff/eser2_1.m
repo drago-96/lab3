@@ -10,4 +10,5 @@ for t=1:4
   [x,u] = eulero(f,int,y0,h(t));
   plot(x,u,'r.-',l,y,'b');
   legend('Eulero','esatta');
+  title(['h=', num2str(h(t))]);
 end
