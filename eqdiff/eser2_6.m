@@ -11,12 +11,11 @@ for j=1:2
   subplot(1,2,j);
   plot(x1(2:end-1)-x1(1:end-2),'r.');
   err = max(abs(y1-g(x1)))
-  %pause(5);
+  rerr = max(abs(y1-g(x1))./g(x1))
   for i=1:3
     h=H(i);
     [x,y]=eulero(f,span,y0,h);
-    %plot(x,y);
     err = max(abs(y-g(x)))
-    %pause(1);
+    rerr = max(abs(y-g(x))./g(x))
   end
 end
