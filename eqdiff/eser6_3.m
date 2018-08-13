@@ -1,4 +1,4 @@
-M=[0.1 1 10 30];
+M=[0.1 1 10 50];
 opts=odeset("InitialStep",1);
 for i=1:4
   mu=M(i);

@@ -7,5 +7,3 @@ y0p = [11;0;20];
 plot3(y(:,1),y(:,2),y(:,3),yp(:,1),yp(:,2),yp(:,3),'r')
 figure(2)
 plot(x,y(:,1),xp,yp(:,1),'r');
-%hold on
-%plot3(yp(:,1),yp(:,2),yp(:,3),'r')
